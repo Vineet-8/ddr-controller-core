@@ -8,17 +8,8 @@ A synthesizeable JEDEC-compliant (simplified) Micro-DDR Controller designed to m
 - **Timing Enforcement:** Hard-coded configuration safely enforces standard structural constraints such as $t_{RCD}$ (RAS-to-CAS Delay).
 - **SystemVerilog Verification:** Outfitted with an interface-based assertion engine (SVA) protecting against timing violations, validated by a randomized dynamic testbench class.
 
-## Project Structure
-- `/rtl`: Contains core synthesizeable design files.
-- `/dv`: Holds the SystemVerilog verification suite and assertion interface.
-- `/synth`: Production assets mapping out constraints, generic gate-level netlists, and script controls.
-
 ## Simulation & Verification (Cadence Xcelium)
-To execute the testbench environment in batch simulation mode, run:
-\`\`\`bash
-xrun -sv rtl/*.v dv/*.sv
-\`\`\`
-The design includes strict SystemVerilog assertions checking structural compliance. All randomized dynamic transactions completed without a single error or protocol violation.
+The design includes SystemVerilog assertions checking structural compliance. All randomized dynamic transactions completed without a single error or protocol violation.
 
 ## Synthesis Metrics (Cadence Genus)
 The design was successfully synthesized targeting an aggressive 200 MHz clock frequency ($5.0\text{ ns}$ period) under nominal operating parameters[cite: 4].
