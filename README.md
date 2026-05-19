@@ -21,18 +21,18 @@ xrun -sv rtl/*.v dv/*.sv
 The design includes strict SystemVerilog assertions checking structural compliance. All randomized dynamic transactions completed without a single error or protocol violation.
 
 ## Synthesis Metrics (Cadence Genus)
-[cite_start]The design was successfully synthesized targeting an aggressive 200 MHz clock frequency ($5.0\text{ ns}$ period) under nominal operating parameters[cite: 4].
+The design was successfully synthesized targeting an aggressive 200 MHz clock frequency ($5.0\text{ ns}$ period) under nominal operating parameters[cite: 4].
 
 ### 1. Timing Summary
-- [cite_start]**Target Period:** 5.0 ns ($5000\text{ ps}$) [cite: 6, 7]
-- [cite_start]**Data Path Propagation:** 0.34 ns ($340\text{ ps}$) over 5 logic levels [cite: 11]
-- [cite_start]**Worst Negative Slack (WNS):** **+3.575 ns** (Timing fully closed) [cite: 11]
-- [cite_start]**Critical Path Endpoint:** `cmd_queue_count_reg[3]/D` [cite: 7]
+- **Target Period:** 5.0 ns ($5000\text{ ps}$)
+- **Data Path Propagation:** 0.34 ns ($340\text{ ps}$) over 5 logic levels
+- **Worst Negative Slack (WNS):** **+3.575 ns** (Timing fully closed)
+- **Critical Path Endpoint:** `cmd_queue_count_reg[3]/D`
 
 ### 2. Area Utilization
-- [cite_start]**Total Silicon Footprint:** $1488.384\text{ }\mu\text{m}^2$ [cite: 5]
-- [cite_start]**Gate Count:** 112 cells mapped [cite: 5]
+- **Total Silicon Footprint:** $1488.384\text{ }\mu\text{m}^2$
+- **Gate Count:** 112 cells mapped
 
 ### 3. Power Characteristics
-- [cite_start]**Total Power Dissipation:** **89.97 µW** [cite: 3]
-- [cite_start]**Internal / Switching / Leakage:** 55.11% / 37.48% / 7.41% [cite: 3]
+- **Total Power Dissipation:** **89.97 µW**
+- **Internal / Switching / Leakage:** 55.11% / 37.48% / 7.41% 
