@@ -1,0 +1,5 @@
+-e sim/
+*.log
+*.vcd
+*.key
+*~
